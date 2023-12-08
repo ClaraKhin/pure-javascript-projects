@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
+}
+body {
+  background: url("../public/images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  z-index: -1;
+  filter: blur(4px);
+  overflow: hidden;
+}
+.projects {
+  z-index: 1;
+}
+.projects .container h1 {
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+  padding-top: 30px;
+  color: #fff;
+}
+.projects .content {
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.projects .content .projects-row .projects-image {
+  width: 325px;
+  height: 260px;
+  margin: 10px;
+}
+.projects .content .projects-row .card {
+  margin: 0 auto;
+  height: 70vh;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+}
+.projects .content .projects-row .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 50px;
+  background: #fff;
+  opacity: 0.4;
+}
+
+.projects .content .projects-row .card .desc {
+  margin: 10px;
+}
+.projects .content .projects-row .card .project-title {
+  font-weight: 600;
+}
+
+.projects .content .projects-row .card .link-btn {
+  padding: 10px;
+  width: 100%;
+  margin: 10px auto;
+  border-radius: 30px;
+  background: #000000;
+  opacity: 0.6;
+  cursor: pointer;
+  border: none;
+}
+.projects .content .projects-row .card .link-btn:hover {
+  background: #ffffff;
+  opacity: 0.6;
+}
+.projects .content .projects-row .card .link-btn:hover a {
+  color: #000000;
+}
+.projects .content .projects-row .card .link-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
