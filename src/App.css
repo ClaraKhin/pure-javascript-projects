@@ -38,7 +38,7 @@ body::before {
   margin: 30px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 15px;
+  grid-gap: 13px;
 }
 
 .projects .content .projects-row .projects-image {
@@ -95,4 +95,42 @@ body::before {
   color: #fff;
   font-weight: 600;
   font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+  .projects .content {
+    display: block;
+    margin: auto 0;
+  }
+  .projects .container {
+    margin: 0px;
+  }
+
+  .projects .container h1 {
+    width: 100%;
+    margin: auto 50px;
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+
+  .projects .content .projects-row .card {
+    margin-bottom: 30px;
+    height: 50vh;
+  }
+  .projects .content .projects-row .projects-image {
+    width: 140px;
+    height: 100px;
+    margin: 8px;
+  }
+  .projects .content .projects-row .card .desc {
+    margin: 8px;
+    font-size: 13px;
+  }
+  .projects .content .projects-row .card .project-title {
+    font-weight: 600;
+  }
+  .projects .content .projects-row .card .link-btn {
+    padding: 8px;
+    width: 50%;
+  }
 }
