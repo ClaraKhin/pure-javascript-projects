@@ -47,5 +47,13 @@ const ProjectList = [
     description:
       "DOM manipulation and CRUD practice on Simple To Do List app. Now List and Finish your Tasks!",
   },
+  {
+    id: 7,
+    name: "Small Library",
+    image: "./images/Small Library .png",
+    link: "https://clarakhin.github.io/book/",
+    description:
+      "DOM manipulation and CRUD practice on Small Library app where we can list and update our favourite books.",
+  },
 ];
 export default ProjectList;

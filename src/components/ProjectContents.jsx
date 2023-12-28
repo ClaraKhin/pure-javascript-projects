@@ -17,6 +17,7 @@ const ProjectContents = () => {
                       variant="top"
                       src={value.image}
                       className="projects-image"
+                      alt={value.name}
                     />
                     <Card.Body>
                       <Card.Title className="project-title">
