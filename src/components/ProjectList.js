@@ -49,6 +49,14 @@ const ProjectList = [
   },
   {
     id: 7,
+    name: "Plan Your Tasks To Finish",
+    image: "./images/Plan and Finish Your Tasks.png",
+    link: "https://your-taskz.netlify.app/",
+    description:
+      "DOM manipulation and CRUD practice on Tasks Planner app where we can plan and finish our daily tasks.",
+  },
+  {
+    id: 8,
     name: "Small Library",
     image: "./images/Small Library .png",
     link: "https://clarakhin.github.io/book/",
